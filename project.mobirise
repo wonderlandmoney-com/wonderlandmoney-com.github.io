@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-03 16:33",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://wonderlandmoney-com.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://wonderlandmoney-com.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "ct4ddzuh0c",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Wonderland Money™ | Home Official Site",
+        "meta_descr": "WebWonderland Money is a DeFi protocol that invests in projects and strategies that support the Web3 and DeFi ecosystem. Users can buy wMEMO tokens, vote on protocol proposals, …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://wonderlandtime1.hpage.com\"><img src=\"@PROJECT_PATH@/assets/images/wonderland.png\" alt=\"Wonderland Money\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u0islfZnSt",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://volta.club/\" class=\"text-primary\">Wonderland Money</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://wonderlandmoney-com.github.io/\" class=\"text-primary\">Wonderland Money</a>: Unraveling the Peculiar Economics of a Whimsical Realm</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the realm of fantasy and imagination, <a href=\"https://wonderlandmoney-com.github.io/\" class=\"text-primary\">Wonderland Money</a> takes center stage as a peculiar and whimsical facet of fantastical worlds. Originating from the iconic works of Lewis Carroll, particularly \"Alice's Adventures in Wonderland\" and \"Through the Looking-Glass,\" Wonderland Money introduces readers to a currency system that defies conventional economic norms. In this article, we embark on a journey through the eccentric financial landscape of Wonderland, exploring the peculiarities, symbolism, and cultural implications of its fantastical currency.\n<br>\n<br>The Absurdity of Wonderland Money\n<br>\n<br>In Carroll's Wonderland, the absurdity of everyday life is heightened by the equally absurd nature of its currency. The Mad Hatter's tea party, a whimsical gathering of peculiar characters, becomes a stage for the first glimpse of Wonderland's economic eccentricities. The Hatter, March Hare, and Dormouse engage in nonsensical conversations about time and money, blurring the lines between rational economic exchanges and chaotic absurdity.\n<br>\n<br>The Queen of Hearts, a prominent figure in Wonderland, introduces yet another layer of peculiarity with her penchant for ordering executions at the drop of a hat. The Queen's preference for playing cards as her currency of choice adds a surreal twist to the economic landscape, as cards are freely used for bartering, gambling, and even settling disputes.\n<br>\n<br>Symbolism of Wonderland Money\n<br>\n<br>Beyond the surface absurdity, Wonderland Money holds symbolic significance that reflects Carroll's commentary on societal values and economic absurdities. The playing cards, which serve as the primary currency, represent the arbitrary nature of wealth and social status. In Wonderland, one's economic standing can change with the flip of a card, emphasizing the ephemeral and capricious nature of financial success.\n<br>\n<br>The Queen of Hearts, with her obsession for ordering beheadings, symbolizes the tyrannical and arbitrary power often associated with wealth and authority. Wonderland Money becomes a tool of control and manipulation in the hands of the Queen, highlighting the potential dangers of unchecked economic power.\n<br>\n<br>Furthermore, the Cheshire Cat's ability to appear and disappear at will introduces an element of existential uncertainty, challenging the traditional notions of financial stability. Wonderland Money, in this context, becomes a reflection of the fluid and unpredictable nature of life, where the pursuit of wealth may lead to unexpected outcomes.\n<br>\n<br>Economic Nonsense and Absurd Exchanges\n<br>\n<br>The Tea Party hosted by the Mad Hatter and March Hare serves as an illustrative example of Wonderland's economic absurdity. The Hatter poses the famous riddle, \"Why is a raven like a writing desk?\" with no sensible answer, embodying the nonsensical nature of economic exchanges in Wonderland. The idea of a never-ending tea party, where time stands still and conversations loop endlessly, challenges the traditional economic concept of scarcity and the finite nature of resources.\n<br>\n<br>In Wonderland, economic transactions lack a clear purpose or rational basis, reflecting the chaotic and absurd nature of the fantastical realm. The perpetual tea party becomes a metaphor for the cyclical and meaningless pursuit of wealth and social standing, where individuals engage in economic activities without a clear understanding of their purpose.\n<br>\n<br>Cultural Implications of Wonderland Money\n<br>\n<br>Wonderland Money extends beyond the pages of Carroll's tales, influencing popular culture and inspiring discussions about the absurdities of the real-world economic systems. The notion of using playing cards as a form of currency has permeated various adaptations and reinterpretations of Wonderland, becoming a symbol of economic irrationality and the arbitrary nature of wealth.\n<br>\n<br>In a world where economic systems are often scrutinized for their complexities and inequalities, Wonderland Money serves as a satirical commentary on the irrationalities inherent in traditional economic structures. The absurdity of Wonderland's economic exchanges prompts readers and viewers to reflect on their own societal norms and question the logic behind established economic practices.\n<br>\n<br>Financial Lessons from Wonderland\n<br>\n<br>While Wonderland Money may seem like a whimsical and absurd concept, it imparts valuable lessons about the nature of wealth, power, and societal values. The fluidity and unpredictability of Wonderland's economic landscape remind us that the pursuit of wealth should not come at the expense of personal values and well-being.\n<br>\n<br>The Queen of Hearts' tyrannical rule, fueled by her obsession with wealth and authority, serves as a cautionary tale about the potential consequences of unchecked economic power. Wonderland Money encourages us to reevaluate our priorities and consider the true meaning of prosperity, urging us to question societal norms that prioritize wealth over compassion and fairness.\n<br>\n<br>The Cheshire Cat, with its enigmatic grin and elusive nature, embodies the idea that financial stability is often elusive and transient. Wonderland Money challenges the notion that wealth guarantees happiness and security, prompting a reconsideration of our relationships with money and material possessions.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u0ism2yUrU",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
